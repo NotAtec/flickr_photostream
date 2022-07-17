@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FlickrPhotostream</title>
+    <title>Photostreamr</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <section class="hero is-fullheight">
+      <%= yield %>
+      <footer>
+        <div class="content has-text-centered">
+          <p>A photostream pulled from <a href="https://www.flickr.com">Flickr</a>. Made by <a href="https://github.com/NotAtec">Jeroen Brinkhorst</a></p>
+        </div>
+      </footer>
+    </section>
+    
   </body>
 </html>

@@ -1,0 +1,25 @@
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <div class="columns is-variable is-centered">
+      <div class="column is-one-fifth has-text-centered">
+        <h1 class="title">PhotoStreamr</h1>
+        <div>
+          <%= simple_form_for :query, url: root_path, method: "GET" do |f| %>
+            <div class="field">
+              <div class="control">
+                <%= f.input :id,
+                            wrapper: false,
+                            label: false,
+                            placeholder: "Enter User ID",
+                            input_html: { class: "input has-text-centered" }%>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control"><%= f.submit "Get photos", class: "button" %></div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

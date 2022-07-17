@@ -22,8 +22,16 @@
   margin-top: auto;
   padding: 1.5rem;
   background-color: $white-ish;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
  }
 
  section.hero {
   background-color: $bg;
+ }
+
+ .gap-8px {
+  gap: 8px;
  }
